@@ -11,6 +11,10 @@ class Person:
 
 #2) 인스턴스 복사본 생성
 p1 = Person()
+p2 = Person()
+p2.name = "전우치"
 
 #3) 메서드 호출
 p1.print()
+p2.print()
+
