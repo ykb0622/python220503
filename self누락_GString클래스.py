@@ -11,6 +11,7 @@ class GString:
     def print(self):
         #약간의 버그
         print(str)
+        #print(self.str)
 
 #인스턴스 생성
 g = GString()
