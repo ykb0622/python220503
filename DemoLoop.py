@@ -35,3 +35,6 @@ for i in lst:
         continue
     print ("Item:{0}".format(i))
 
+#반복횟수정하기
+#for i in range(10):
+
