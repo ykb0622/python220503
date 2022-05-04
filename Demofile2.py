@@ -29,8 +29,8 @@ for item in lst:
 
 f.close()
 
-# with절을 같이 사용
-with open("c:\\work\\text.txt", encoding="utf-8") as f:
+# with절을 같이 사용(close()메서드를 자동 호출)
+with open("c:\\work\\test.txt", encoding="utf-8") as f:
     for item in f.readline():
-        print(item.replace("\n"))
+        print(item.replace("\n", ""))
 
