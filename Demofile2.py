@@ -22,7 +22,7 @@ print(f.readline())
 
 #처음으로 이동
 print(f.tell())
-lst=f.readlines()
+lst=f.readline()
 print(lst)
 for item in lst:
     print(item, end="")
@@ -31,6 +31,9 @@ f.close()
 
 # with절을 같이 사용(close()메서드를 자동 호출)
 with open("c:\\work\\test.txt", encoding="utf-8") as f:
-    for item in f.readline():
-        print(item.replace("\n", ""))
+    result = f.readline()
+    while result != '':
+        print(result, end="")
+        result = f.readline()
+
 
